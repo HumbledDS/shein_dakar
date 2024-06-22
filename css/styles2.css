@@ -1,0 +1,48 @@
+/* Styles généraux pour tous les écrans */
+/* Par exemple, pour le contenu général */
+.container {
+    width: 100%;
+    max-width: 1200px; /* Limite la largeur maximale du contenu */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    padding: 0 20px;
+}
+
+/* Media Queries pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+    /* Styles spécifiques pour les écrans jusqu'à 768px de largeur (tablettes et téléphones) */
+
+    /* Exemple : Ajuster la taille des polices ou des marges pour les écrans plus petits */
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Réorganiser la mise en page si nécessaire */
+    .steps {
+        flex-direction: column; /* Pour empiler les étapes verticalement sur des écrans plus petits */
+    }
+}
+
+/* Media Queries pour les iPad en mode paysage */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles spécifiques pour les iPad en mode paysage */
+
+    /* Exemple : Réduire la taille des logos ou des éléments pour s'adapter à l'espace limité */
+    .logo h1 {
+        font-size: 22px;
+    }
+}
+
+/* Media Queries pour les ordinateurs de bureau et écrans larges */
+@media only screen and (min-width: 1025px) {
+    /* Styles spécifiques pour les écrans larges */
+
+    /* Exemple : Augmenter la taille du texte ou de certains éléments pour les écrans plus grands */
+    .logo h1 {
+        font-size: 26px;
+    }
+}
